@@ -1,4 +1,5 @@
 import operator
+import random
 
 class Calc:
 	def __init__(self, name):
@@ -14,7 +15,31 @@ class Calc:
 	def calculate(self, op, num_one, num_two):
 		return self.my_message.format(self.name, self.ops[op](num_one, num_two))
 
-my_calc_class = Calc('Shaun')
+class Dealership:
+	def __init__(self, attributes):		
+		self.attributes = attributes
+		self.message = "Your vehicle is a {} {} from the year {}"		
 
-answer_one = my_calc_class.calculate('/', 1, 2)
-print (answer_one)
+	def random_vehicle(self):
+		l = [random.choice(attr) for attr in self.attributes]
+		return self.message.format(l[0], l[1], l[2])
+
+attributes = [
+	[
+		'Ford',
+		'GMC'
+	],
+	[
+		'Supra',
+		'Town Car'
+	],
+	[
+		'1990',
+		'2000'
+	]
+]
+
+
+red_dealership = Dealership(attributes)
+print (red_dealership)
+print (red_dealership.random_vehicle())
