@@ -7,34 +7,46 @@ class List:
 	def __init__(self):
 		pass	
 
-	#def app(self, string, x):		
-		#self.string = string
-	#	return self.string.append(x)
+	def app(self, l, value):		
+		l.append(value)
+		return l		
 
-	def names(self, names):
-		self.names = names
+	def second_names(self, l):		
 		self.message = "The second name on the names list is {}"	
-		return self.message.format(names)
+		second_name = self.select_index(l, 1)
+		return self.message.format(second_name)
 
+	def select_index(self, l, index):
+		return l[index]
 
 names = [
 	"John", "Eric", "Jessica"
-]	
+]
+
+numbers = []
+
+string = []
+
 
 # write your code here
 
-l = List()
+a = List()
 
-#numbers = l.app('num',1)
+names = a.select_index(names, 1)
 
-eric = l.names("Eric")
+second_name = a.second_names(names)
 
-print(eric)
+numbers = a.app(numbers, 1)
+numbers = a.app(numbers, 2)
+numbers = a.app(numbers, 3)
 
-# this code should write out the filled arrays and the second name in the names list (Eric).
-#print(numbers)
-#print(strings)
-#print("The second name on the names list is %s" % second_name)
+string = a.app(string, "hello")
+string = a.app(string, "world")
+
+print(second_name)
+print(numbers)
+print(string)
+
 
 
 
