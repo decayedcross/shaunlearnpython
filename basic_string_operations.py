@@ -1,40 +1,51 @@
+class Basic_String:
+	def __init__(self):
+		pass
 
-
-
-
-
+	def printer(self, message, s):
+		print(message, s)
+		return
+	
+	def form_printer(self, message, a):
+		print(message.format(s.count(a)))
 
 s = "Hey there! what should this string be?"
+
+
+p = Basic_String()
+
 # Length should be 20
-print("Length of s =", len(s))
+p.printer("Length of s =", len(s))
 
 # First occurrence of "a" should be at index 8
-print("The first occurrence of the letter a =", s.index("a"))
+p.printer("The first occurrence of the letter a =", s.index("a"))
 
 # Number of a's should be 2
-print("a occurs {} times".format(s.count("a")))
+p.form_printer("a occurs {} times" , "a")
 
 # Slicing the string into bits
-print("The first five characters are", s[:5])
-print("The next five characters are", s[5:10])
-print("The thirteenth character is", s[12])
-print("The characters with odd index are", s[1::2])
-print("The last five characters are", s[-5:])
+p.printer("The first five characters are", s[:5])
+p.printer("The next five characters are", s[5:10])
+p.printer("The thirteenth character is", s[12])
+p.printer("The characters with odd index are", s[1::2])
+p.printer("The last five characters are", s[-5:])
 
 # Convert everything to uppercase
-print("String in uppercase:", s.upper())
+p.printer("String in uppercase:", s.upper())
 
 # Convert everything to lowercase
-print("String in lowercase:", s.lower())
+p.printer("String in lowercase:", s.lower())
 
 # Check how a string starts
 if s.startswith("Str"):
     print("String starts with 'Str'. Good!")
+    p.printer("String starts with 'Str'. Good!")
 
 # Check how a string ends
 if s.endswith("ome!"):
     print("String ends with 'ome!'. Good!")
+    p.printer("String in lowercase:", s.lower())
 
 # Split the string into three separate strings,
 # each containing only a word
-print("Split the words of the string: ", s.split(" "))
+p.printer("Split the words of the string: ", s.split(" "))
