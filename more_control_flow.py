@@ -21,7 +21,7 @@ else:
 #4.2
 ### NOTES ###
 
-#for - loops through the content of a given list or string in numerical order, starting with 0
+#for - loops through the content of a given list or string
 
 four_point_two = ['lesson', 'four', 'point', 'two']
 
@@ -30,6 +30,13 @@ for length in four_point_two:
 
 
 #4.3
+### NOTES ###
+
+#range - if you need a range of numbers in a list or string, it may bheave as a list but it is not
+
+
+
+
 for four_point_three in range(len(four_point_two)):
 	print(four_point_three, (four_point_two[four_point_three]))
 
