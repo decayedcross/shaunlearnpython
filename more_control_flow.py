@@ -32,7 +32,7 @@ for length in four_point_two:
 #4.3
 ### NOTES ###
 
-#range - if you need a range of numbers in a list or string, it may bheave as a list but it is not
+#range - if you need a range of numbers in a list or string, it may bheave as a list but it is not.
 
 
 
