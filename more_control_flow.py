@@ -43,3 +43,12 @@ for blaze in range(415, 423):
 			continue
 		print(blaze, 'is a usless number')
 
+#4.4 (elif version)
+for blaze in range(415, 423):
+	if blaze == 421:
+		print(blaze,'we\'ve gone to far')
+		break
+	elif blaze == 420:
+		print(blaze, 'blaze it')
+		continue
+	print(blaze, 'is a usless number')
