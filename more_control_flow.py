@@ -32,10 +32,11 @@ for length in four_point_two:
 #4.3
 ### NOTES ###
 
-#range - if you need a range of numbers in a list or string, it may bheave as a list but it is not.
+#range - if you need a range of numbers in a list or string, it may bheave as a list but it is not
 
 
-
+#We say such an object is iterable, that is, suitable as a target for functions and constructs that expect something from which they can obtain successive items until the supply is exhausted. 
+# We have seen that the for statement is such an iterator. The function list() is another; it creates lists from iterables:
 
 for four_point_three in range(len(four_point_two)):
 	print(four_point_three, (four_point_two[four_point_three]))
@@ -51,6 +52,11 @@ for four_point_three in range(len(four_point_two)):
 
 
 #4.4
+### NOTES ###
+
+#break - break the loop
+#continue - after finding w/e you want in the and make an action continue con through the loop
+
 for blaze in range(415, 423):
 	if blaze == 421:
 		print(blaze,'we\'ve gone to far')
