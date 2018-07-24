@@ -78,9 +78,3 @@ for blaze in range(415, 423):
 	print(blaze, 'is a usless number')
 
 
-
-	Python’s for statement iterates over the items of any sequence (a list or a string), in the order that they appear in the sequence. For example (no pun intended):
-
-If you need to modify the sequence you are iterating over while inside the loop (for example to duplicate selected items), it is recommended that you first make a copy. 
-Iterating over a sequence does not implicitly make a copy. The slice notation makes this especially convenient:
-
