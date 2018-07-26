@@ -38,7 +38,9 @@ for length in four_point_two:
 #We say such an object is iterable, that is, suitable as a target for functions and constructs that expect something from which they can obtain successive items until the supply is exhausted. 
 # We have seen that the for statement is such an iterator. The function list() is another; it creates lists from iterables:
 
-for four_point_three in range(len(four_point_two)):
+less_fourthree = ['this', 'is', 'for', 'lesson', 'four']
+
+for four_point_three in list(range(4)):
 	print(four_point_three, (four_point_two[four_point_three]))
 
 
